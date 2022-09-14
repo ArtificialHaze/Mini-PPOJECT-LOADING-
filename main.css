@@ -1,0 +1,110 @@
+/* GLOBAL STYLING */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* MAIN STYLING */
+
+.card {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 400px;
+}
+
+.card__header {
+  height: 200px;
+}
+
+.card__header img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card__content {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.card__title {
+  height: 20px;
+  margin: 0;
+}
+
+.card__paragraph {
+  color: #777;
+  margin-top: 30px;
+}
+
+.card__author {
+  display: flex;
+}
+
+.card__profile--img img {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+.card__author--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10px;
+  width: 100px;
+}
+
+.card__author--info small {
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.animated__background {
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 10%,
+    #f6f7f8 20%,
+    #f6f7f8 100%
+  );
+  background-size: 200% 100%;
+  animation: backgroundPosition 1s linear infinite;
+}
+
+.animated__background--text {
+  display: inline-block;
+  border-radius: 50px;
+  margin: 0;
+  height: 10px;
+  width: 100%;
+}
+
+/* KEYFRAME */
+
+@keyframes backgroundPosition {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: -150% 0;
+  }
+}
